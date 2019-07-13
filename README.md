@@ -12,11 +12,12 @@ To do so, some steps are required:
 AssetA_DeviceA
 AssetA_DeviceB
 AssetB_DeviceC 
+...
 ```
 
-2) You need to rename your dashboard json into "ASSETNAME.json" where ASSETNAME is the name of the asset it refers to
+2) You need to rename your dashboard json into "ASSETNAME.json" where ASSETNAME is the name of the asset it refers to (AssetA.json for example)
 
-3) You need to manually edit the json value referring to rootEntity Id inside entityAliases object
+3) You need to manually edit the json value referring to rootEntity Id inside entityAliases object and set it to "TO_REPLACE"
 
 ```
 "entityAliases": {
