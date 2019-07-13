@@ -1,0 +1,23 @@
+version: "3"
+services:
+
+   thingsboard:
+      hostname: thingsboard
+      image: thingsboard_dload
+      environment:
+         - TB_URL=localhost
+         - TB_PORT=9090
+         - DASHBOARDS_PATH=/opt/dashboards
+      networks:
+         - hostnet
+      ports:
+         - "9090:9090"
+      volumes:
+         - ./tb_dashboards:/opt/dashboards
+         - mytb_data:/data
+
+volumes:
+   mytb_data:
+
+networks:
+   hostnet:
