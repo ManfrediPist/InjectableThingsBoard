@@ -48,13 +48,14 @@ AssetB_DeviceC
 The environment setup is pretty straightforward:
 
 1) Build the docker image inside Build folder by running the following command:
-
-$ docker build -t thingsboard_dload ./Build/
-
+```bash
+docker build -t thingsboard_dload ./Build/
+```
 (P.S you can choose whatever image tag name you like, just remeber to also change it on docker-compose accordingly)
 
 2) Put the previously configured dashboards and "bindings" file into a folder called "tb_dashboards" 
 
 3) Start the container
-
-$ docker-compose up 
+```bash
+docker-compose up 
+```
