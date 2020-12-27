@@ -47,7 +47,7 @@ AssetB_DeviceC
 ```
 The environment setup is pretty straightforward:
 
-1) compile the docker image inside Build folder by running the following command:
+1) Build the docker image inside Build folder by running the following command:
 
 $ docker build -t thingsboard_dload ./Build/
 
